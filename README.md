@@ -1,3 +1,101 @@
-# Customer-Retention-on-Olist-E-Commerce
+Customer Retention & Churn Analysis
+---
+Olist E-Commerce Dataset | SQL (MSSQL), Excel, Tableau
+***
+Project Overview
 
-Olist is an e-commerce solution provider for small and medium-sized businesses (SMEs) in Brazil. It was founded in 2015 and offers a platform to manage multichannel sales, operations, and marketplace integration. The objective of this project is to improve customer lifetime value by increasing repeat purchases and reducing early-stage churn.
+This project analyzes customer purchasing behavior in an e-commerce marketplace to understand why customers fail to return after their first purchase and how retention impacts long-term business value.
+
+Using SQL, Excel, and Tableau, I examined customer cohorts, churn behavior, and repeat purchase patterns to surface actionable business insights relevant to large marketplaces such as Shopee.
+***
+Business Objective
+
+Identify key drivers of customer churn and retention in order to propose data-driven actions that improve repeat purchase behavior and customer lifetime value (CLV).
+___
+Dataset
+
+Source: Olist E-Commerce Public Dataset (Kaggle)
+
+Key tables: 
+- olist_orders
+- olist_customers
+
+Primary keys and fields:
+- customer_unique_id
+- order_id
+- order_purchase_timestamp
+***
+Dashboards
+
+1️⃣ Overview Dashboard
+
+Purpose: To understand overall customer behaviour and purchasing pattern.
+
+Key metrics
+- Average order frequency: 1.0
+- Repeat purchase rate: 3.0%
+
+Visuals
+- Monthly Active Customers (line chart)
+- Monthly New vs Returning Customers (stacked bar)
+
+2️⃣ Cohort Retention Dashboard
+
+Purpose: To identify when customers churn.
+
+Visuals
+- Retention Heatmap by cohort month
+- Retention Curve
+
+Key observation
+- Retention drops sharply from 100% in Month 0 to 0.48% in Month 1
+- Retention stabilizes at extremely low levels afterward
+
+3️⃣ Churn Analysis Dashboard
+
+Purpose: To quantify disengagement and inactivity.
+
+Key Metrics
+- Overall churn rate: 80%
+- Average days of inactivity: 237 days
+
+Visuals
+- Active vs Churned Customers by Cohort Month
+***
+Key Business Insights
+
+:one: The platform functions primarily as a one-time purchase marketplace
+- Average order frequency is 1.
+- Only 3% of customers make repeat purchases.
+> Most users transact once and never return.
+
+:two: Early-stage churn is the largest value leak
+- Over 99% of customers churn after their first month.
+> Retention failure occurs immediately after the first purchase.
+
+:three: Retention weakness is structural, not cohort-specific
+- All cohorts exhibit similar early drop-offs.
+> Indicates a platform-wide lifecycle issue rather than seasonal effects.
+
+:four: Churn is the default customer outcome
+- 80% churn rate with long inactivity periods.
+> The business continuously replaces lost customers instead of compounding value.
+
+:five: Acquisition masks retention failure
+- Stable activity is driven by new customers.
+> Top-line metrics hide severe underlying retention problems.
+***
+Business Recommendations
+- Focus retention efforts on the first 30 days after purchase
+- Introduce second-purchase incentives and post-purchase engagement
+- Shift KPIs from acquisition volume to retention quality
+- Prioritize reactivation for customers inactive for 30–90 days
+***
+Business Impact
+
+➡️ Improving Month-1 retention would deliver disproportionate gains in customer lifetime value, reduce dependency on continuous acquisition, and improve marketing efficiency.
+
+
+
+
+
