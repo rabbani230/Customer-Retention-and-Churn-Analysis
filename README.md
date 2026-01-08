@@ -59,6 +59,7 @@ Key Business Insights
 :one: **The platform functions primarily as a one-time purchase marketplace**
 - Average order frequency is 1.
 - Only 3% of customers make repeat purchases.
+- New customers made up the vast majority of orders, significantly outnumbering returning customers across months.
 > Most customers completed a single transaction and never return, indicating extremely weak repeat purchasing behavior.
 
 :two: **Early-stage churn is the largest value leak**
