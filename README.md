@@ -105,8 +105,8 @@ Primary keys & fields:
 Tools Used
 
 :one: SQL (Microsoft SQL Server)
-- Data cleaning and joins
-- Customer-level aggregation
+- Checking for data consistency
+- Table joins and customer-level aggregation
 - Cohort creation (first purchase month)
 - Churn labeling using inactivity thresholds
 
