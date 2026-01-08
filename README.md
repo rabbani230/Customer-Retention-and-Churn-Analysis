@@ -21,8 +21,8 @@ Dashboards
 Purpose: To understand overall customer behaviour and purchasing pattern.
 
 Key metrics
-- Average order frequency: 1.0
-- Repeat purchase rate: 3.0%
+- **Average order frequency**: 1.0
+- **Repeat purchase rate**: 3.0%
 
 Visuals
 - Monthly Active Customers (line chart)
@@ -38,10 +38,6 @@ Visuals
 - Retention Heatmap by cohort month
 - Retention Curve
 
-Key observation
-- Retention drops sharply from 100% in Month 0 to 0.48% in Month 1
-- Retention stabilizes at extremely low levels afterward
-
 <img width="1574" height="1011" alt="Cohort Retention" src="https://github.com/user-attachments/assets/61efdc24-a21d-447e-9138-e57c91e360e8" />
 
 3️⃣ Churn Analysis Dashboard
@@ -49,8 +45,8 @@ Key observation
 Purpose: To quantify disengagement and inactivity.
 
 Key Metrics
-- Overall churn rate: 80%
-- Average days of inactivity: 237 days
+- **Overall churn rate**: 80%
+- **Average days of inactivity**: 237 days
 
 Visuals
 - Active vs Churned Customers by Cohort Month
@@ -60,24 +56,24 @@ Visuals
 ***
 Key Business Insights
 
-:one: The platform functions primarily as a one-time purchase marketplace
+:one: **The platform functions primarily as a one-time purchase marketplace**
 - Average order frequency is 1.
 - Only 3% of customers make repeat purchases.
-> Most users transact once and never return.
+> Most customers completed a single transaction and never return, indicating extremely weak repeat purchasing behavior.
 
-:two: Early-stage churn is the largest value leak
-- Over 99% of customers churn after their first month.
+:two: **Early-stage churn is the largest value leak**
+- Over 99% of customers churn after their first purchase.
 > Retention failure occurs immediately after the first purchase.
 
-:three: Retention weakness is structural, not cohort-specific
+:three: **Retention weakness is structural, not cohort-specific**
 - All cohorts exhibit similar early drop-offs.
 > Indicates a platform-wide lifecycle issue rather than seasonal effects.
 
-:four: Churn is the default customer outcome
+:four: **Churn is the default customer outcome**
 - 80% churn rate with long inactivity periods.
 > The business continuously replaces lost customers instead of compounding value.
 
-:five: Acquisition masks retention failure
+:five: **Acquisition masks retention failure**
 - Stable activity is driven by new customers.
 > Top-line metrics hide severe underlying retention problems.
 ***
@@ -98,19 +94,13 @@ Source: Olist E-Commerce Public Dataset (Kaggle)
 Key tables:
 - olist_orders
 - olist_customers
-
-Primary keys & fields:
-- order_id
-- customer_unique_id
-- order_purchase_timestamp
 ***
 Tools Used
 
 :one: SQL (Microsoft SQL Server)
-- Checking for data consistency
-- Table joins and customer-level aggregation
-- Cohort creation (first purchase month)
-- Churn labeling using inactivity thresholds
+- Data consistency check
+- Cohort field creation (first purchase month)
+- Churn labeling using inactivity thresholds (90 days)
 
 :two: Excel
 - Metric validation and sanity checks
@@ -119,7 +109,7 @@ Tools Used
 
 :three: Tableau
 - KPI dashboards
-- Cohort retention heatmaps
+- Cohort retention heatmap
 - Retention curves
 - Churn and lifecycle analysis
 
