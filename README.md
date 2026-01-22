@@ -14,6 +14,8 @@ Identify key drivers of customer churn and retention in order to propose data-dr
 ***
 ### Dashboards
 
+All dashboard image files can be downloaded [here](Analysis/Image).
+
 1️⃣ Overview Dashboard
 
 Purpose: To understand overall customer behaviour and purchasing pattern.
@@ -92,6 +94,8 @@ Source: Olist E-Commerce Public Dataset (Kaggle)
 Key tables:
 - olist_orders
 - olist_customers
+
+Raw and cleaned datasets can be downloaded [here](Analysis/Dataset).
 ***
 ### Tools Used
 
@@ -99,6 +103,8 @@ Key tables:
 - Data consistency check
 - Cohort field creation (first purchase month)
 - Churn labeling using inactivity thresholds (90 days)
+
+The SQL script can be downloaded [here](Analysis/SQL_Queries).
 
 :two: Excel
 - Metric validation and sanity checks
